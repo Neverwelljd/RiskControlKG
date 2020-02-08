@@ -1,0 +1,24 @@
+server:
+  port: 8888
+logging:
+  file:
+    path: log/ruleEngine.log
+spring:
+  application:
+    name: ruleEngine
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://rm-2ze638ua1roqbuaxl8o.mysql.rds.aliyuncs.com:3360/
+    username: root
+    password: root
+  data:
+    neo4j:
+      uri: bolt://localhost:7687
+      username: neo4j
+      password: 123456
+
+mybatis:
+  type-aliases-package: com.riskcontrol.kg.ruleengineserver.model
+  mapper-locations:
+    - mapper/*
+
