@@ -1,0 +1,15 @@
+neo4jDatasource:
+  uri: bolt://localhost:7687
+  username: neo4j
+  password: 123456
+
+kafkaConsumer:
+  bootstrap.servers: 192.168.1.7:9092
+  group.id: test
+  enable.auto.commit: true
+  auto.commit.interval.ms: 1000
+  key.deserializer: org.apache.kafka.common.serialization.StringDeserializer
+  value.deserializer: org.apache.kafka.common.serialization.StringDeserializer
+
+topic: example
+kafkaParitions: 1
